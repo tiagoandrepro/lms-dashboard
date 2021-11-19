@@ -1,0 +1,27 @@
+{
+    "name": "tiagoandrepro/lms-dashboard",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tiagoandrepro\\Lms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tiago André",
+            "email": "thiago_andre@live.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "inertiajs/inertia-laravel": "^0.4.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tiagoandrepro\\Lms\\Providers\\DashboardServiceProvider"
+            ]
+        }
+    }
+}
