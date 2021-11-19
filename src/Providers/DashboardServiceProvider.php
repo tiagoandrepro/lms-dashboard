@@ -25,5 +25,9 @@ class DashboardServiceProvider extends ServiceProvider
             __DIR__ . '/../../src/public' => public_path('assets'),
         ]);
 
+        $this->publishes([
+            __DIR__ . '/../../src/resources/js/' => resource_path('js'),
+        ]);
+
     }
 }
