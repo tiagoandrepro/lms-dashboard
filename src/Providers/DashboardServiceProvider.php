@@ -9,7 +9,7 @@ class DashboardServiceProvider extends ServiceProvider
     public function boot()
     {
        $this->loadRoutesFrom(__DIR__.'/../../src/routes.php');
-        $this->loadViewsFrom(__DIR__.'/../../src/resources/views/', 'dashboard');
+        //$this->loadViewsFrom(__DIR__.'/../../src/resources/views/', 'dashboard');
         //$this->loadMigrationsFrom(__DIR__.'/../../src/database/migrations');
 
 
@@ -25,9 +25,9 @@ class DashboardServiceProvider extends ServiceProvider
             __DIR__ . '/../../src/public' => public_path('assets'),
         ]);
 
-        $this->publishes([
-            __DIR__ . '/../../src/resources/js/' => resource_path('js'),
-        ]);
+       //$this->publishes([
+       //    __DIR__ . '/../../src/resources/js/' => resource_path('js'),
+       //]);
 
     }
 }
