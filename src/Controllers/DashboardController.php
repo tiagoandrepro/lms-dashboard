@@ -45,9 +45,9 @@ class DashboardController extends \App\Http\Controllers\Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        return Inertia::render('Dashboard/Show');
     }
 
     /**
