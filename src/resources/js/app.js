@@ -4,6 +4,10 @@ import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/inertia-vue3'
 import route from "ziggy-js";
 
+import { InertiaProgress } from '@inertiajs/progress'
+
+InertiaProgress.init()
+
 createInertiaApp({
     resolve: name => require(`../Pages/${name}`),
     setup({ el, App, props, plugin }) {

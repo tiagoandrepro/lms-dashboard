@@ -1,14 +1,11 @@
 <template>
-    <h1>Dashboard Test</h1>
-    <Link :href="route('dashboard.show')">Show</Link>
+    <div>text 2</div>
 </template>
 
 <script>
-import {Link} from '@inertiajs/inertia-vue3'
+import DashboardLayout from '../base/App';
 
 export default {
-    components: {
-        Link
-    },
+    layout: DashboardLayout,
 }
 </script>
